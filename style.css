@@ -371,3 +371,17 @@ body{
   background: 25%;
     transform: translateY(-2px);
 }
+.gdi{
+  margin-top: 25px;
+    margin-left: px;
+}
+
+.nosso-txt{
+  color: white;
+  background-color: #4B0082;
+}
+
+.foto1{
+   width: 800px;
+  height: 800px;
+}
