@@ -144,11 +144,10 @@
 
 .hero-btn-primary {
   display: inline-block;
-  background: var(--hero-accent);
   color: #fff;
   padding: 13px 28px;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 30px;
   font-weight: 700;
   text-decoration: none;
   transition:
