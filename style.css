@@ -366,6 +366,11 @@ html {
 
 body {
   background-color: black;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
 }
 
 .logo {
@@ -646,9 +651,129 @@ body {
   justify-self: auto;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 900px) {
+  .section-text {
+    max-height: none;
+    flex-direction: column;
+  }
+
+  .txt1,
+  .txt2 {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 0;
+    line-height: 1.45;
+  }
+
+  .quem-somos-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .gdi {
+    grid-row: auto;
+    text-align: center;
+  }
+
+  .logo {
+    width: min(100%, 300px);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
+  .nosso-txt,
+  .nossa-txt {
+    min-width: 0;
+    width: 100%;
+    line-height: 1.45;
+  }
+
+  .feedback-section {
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .header a,
+  .button-header {
+    display: block;
+    width: 100%;
+  }
+
+  .header a {
+    text-decoration: none;
+  }
+
+  .header .button-header {
+    padding: 7px 3px;
+    font-size: 10px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .hero-section {
+    min-height: auto;
+    padding: 44px 8px;
+  }
+
+  .hero-inner,
+  .hero-content,
+  .hero-headline,
+  .hero-sub {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero-content {
+    align-items: center;
+  }
+
+  .hero-headline {
+    font-size: clamp(28px, 10vw, 38px);
+    overflow-wrap: break-word;
+  }
+
+  .hero-sub {
+    font-size: 16px;
+  }
+
+  .hero-btn-primary {
+    padding: 12px 20px;
+    font-size: 22px;
+  }
+
+  .section-text {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .txt1,
+  .txt2,
+  .nosso-txt,
+  .nossa-txt {
+    padding: 18px;
+    font-size: 17px;
+    overflow-wrap: break-word;
+  }
+
   .container-imagens {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .foto1,
@@ -657,12 +782,43 @@ body {
     height: min(75vw, 420px);
   }
 
+  .quem-somos-container {
+    gap: 16px;
+  }
+
+  .logo {
+    width: min(100%, 300px);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+
   .feedback-section {
     margin-top: 50px;
-    padding: 30px 20px;
+    padding: 28px 18px;
+    font-size: 16px;
+  }
+
+  .feedback-intro h2 {
+    font-size: 28px;
+  }
+
+  .feedback-intro p,
+  .form-field > span,
+  .rating-field legend {
+    font-size: 17px;
   }
 
   .rating-options {
     grid-template-columns: 1fr;
+  }
+
+  .feedback-submit {
+    width: 100%;
+  }
+
+  .feedback-dialog {
+    padding: 28px 20px;
+    font-size: 16px;
   }
 }
