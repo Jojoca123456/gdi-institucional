@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --hero-accent: #8b5cf6;
   --hero-bg: #0d0d0d;
@@ -140,6 +144,20 @@
 
 .hero-section.hero-centered .hero-actions {
   justify-content: center;
+}
+
+.hero-actions .hero-btn-primary {
+  background-color: black;
+  transition:
+    background-color 0.15s,
+    color 0.15s,
+    transform 0.15s;
+}
+
+.hero-actions .hero-btn-primary:hover {
+  background-color: #bbbbbb;
+  color: black;
+  opacity: 1;
 }
 
 .hero-btn-primary {
@@ -361,12 +379,26 @@ body {
   transform: translateY(-2px);
 }
 
-.gdi {}
+.gdi {
+  grid-row: 1 / span 2;
+}
 
-.nosso-txt {
+.nosso-txt,
+.nossa-txt {
   color: white;
-  background-color: #4B0082;
+  background-color: #6A5ACD;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+  transition:
+    opacity 0.15s,
+    transform 0.15s;
+}
 
+.nosso-txt:hover,
+.nossa-txt:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
 }
 
 .container-imagens {
@@ -396,7 +428,9 @@ body {
   border-radius: 20px;
 }
 
-.nosso-txt {
+.nosso-txt,
+.nossa-txt {
+  flex: 1 1 0;
   border-radius: 10px;
   text-align: left;
   padding: 20px;
@@ -405,7 +439,12 @@ body {
   justify-content: center;
 }
 
+.nossa-txt p {
+  margin: 0;
+}
+
 .quem-somos-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 300px minmax(0, 1fr);
   gap: 30px;
 }
