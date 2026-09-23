@@ -7,6 +7,7 @@
   <title>Guardiões da Infância</title>
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -103,9 +104,58 @@ Por meio do Guardiões da Infância, buscamos levar informação de maneira aces
       </p>
       </div>
     </div>
-    
+
+    <section class="feedback-section" id="contato" aria-labelledby="feedback-title">
+      <div class="feedback-intro">
+        <span class="feedback-tag">Sua opinião importa</span>
+        <h2 id="feedback-title">Conte para nós o que você achou</h2>
+        <p>
+          Seu feedback nos ajuda a melhorar o site e a fortalecer o trabalho dos Guardiões da Infância.
+        </p>
+      </div>
+
+      <form class="feedback-form" id="feedback-form">
+        <label class="form-field" for="feedback-name">
+          <span>Seu nome</span>
+          <input type="text" id="feedback-name" name="name" placeholder="Como podemos chamar você?" required />
+        </label>
+
+        <fieldset class="rating-field">
+          <legend>Como foi sua experiência?</legend>
+          <div class="rating-options">
+            <label class="rating-option">
+              <input type="radio" name="rating" value="Precisa melhorar" required />
+              <span class="rating-card"><span aria-hidden="true">🤔</span> Precisa melhorar</span>
+            </label>
+            <label class="rating-option">
+              <input type="radio" name="rating" value="Foi boa" />
+              <span class="rating-card"><span aria-hidden="true">😊</span> Foi boa</span>
+            </label>
+            <label class="rating-option">
+              <input type="radio" name="rating" value="Adorei" />
+              <span class="rating-card"><span aria-hidden="true">🤩</span> Adorei</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <label class="form-field" for="feedback-message">
+          <span>Deixe seu comentário</span>
+          <textarea id="feedback-message" name="message" rows="5"
+            placeholder="Escreva sua sugestão, elogio ou o que podemos melhorar..." required></textarea>
+        </label>
+
+        <button class="feedback-submit" type="submit">Enviar feedback</button>
+      </form>
+    </section>
+
+    <dialog class="feedback-dialog" id="feedback-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-icon" aria-hidden="true">💜</div>
+      <h2 id="dialog-title">Obrigado pelo feedback!</h2>
+      <p id="dialog-message">Sua opinião é muito importante para o nosso projeto.</p>
+      <button type="button" id="dialog-close">Fechar</button>
+    </dialog>
   </div>
 
 </body>
 
-</html
+</html>
