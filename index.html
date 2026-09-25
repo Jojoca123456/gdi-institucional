@@ -12,11 +12,11 @@
 
 <body>
   <div class="container">
-    <header class="header">
+    <nav class="header" aria-label="Navegação principal">
       <a href="#quem-somos"><span class="button-header hero-btn-primary">Quem somos</span></a>
       <a href="#nossa-missao"><span class="button-header hero-btn-primary">Nossa missão</span></a>
       <a href="#contato"><span class="button-header hero-btn-primary">Contato</span></a>
-    </header>
+    </nav>
     <!-- <h1>Bem vindos ao meu site</h1>
       <p class="p1">Deixe a infância ser infância.</p> -->
 
@@ -42,32 +42,32 @@
         <p class="txt1 hero-btn-primary">
           Crianças e adolescentes têm o direito de crescer, aprender e se desenvolver em um ambiente seguro, saudável e
           adequado à sua idade.
-          </br>A adultização pode fazer com que crianças e adolescentes sejam expostos precocemente a responsabilidades,
+          <br />A adultização pode fazer com que crianças e adolescentes sejam expostos precocemente a responsabilidades,
           comportamentos, padrões de beleza e situações que não correspondem à sua fase de desenvolvimento.
-          </br>Nosso objetivo é informar, conscientizar e orientar famílias, responsáveis e toda a comunidade sobre como
+          <br />Nosso objetivo é informar, conscientizar e orientar famílias, responsáveis e toda a comunidade sobre como
           identificar situações de risco, prevenir a adultização e oferecer o apoio necessário para que crianças e
-          adolescentes possam viver cada etapa da infância e da adolescência com segurança e respeito.</br>Aqui, você
+          adolescentes possam viver cada etapa da infância e da adolescência com segurança e respeito.<br />Aqui, você
           encontra informações, orientações e conteúdos educativos para aprender a proteger, saber como agir e
           fortalecer a rede de cuidado ao redor de crianças e adolescentes.
-          </br>Proteger é cuidar. Informar também é uma forma de proteção.
+          <br />Proteger é cuidar. Informar também é uma forma de proteção.
         </p>
         <p class="txt2 hero-btn-primary">
           A adultização infantil acontece quando uma criança ou adolescente é exposto a comportamentos,
           responsabilidades, padrões ou situações que não são adequados para sua idade, fazendo com que seja tratado ou
           incentivado a agir como um adulto antes do momento apropriado.
-          </br>
+          <br />
           Ela pode aparecer de diferentes formas: na cobrança excessiva por aparência e comportamento, na exposição
           precoce a conteúdos inadequados, na responsabilidade por problemas de adultos ou até na pressão para assumir
           uma postura madura antes de estar preparado.
-          </br>
+          <br />
           Com o crescimento das redes sociais, esse problema também pode ocorrer por meio da exposição excessiva da
           imagem de crianças e adolescentes, da busca por padrões de beleza e da participação em conteúdos que
           incentivam comportamentos ou preocupações típicas da vida adulta.
-          </br>
+          <br />
           É importante lembrar: ensinar responsabilidade e autonomia não é o mesmo que adultizar. Crianças e
           adolescentes podem aprender, amadurecer e assumir pequenas responsabilidades de acordo com sua idade, sem
           perder o direito de brincar, aprender, se desenvolver e serem protegidos.
-          </br>
+          <br />
           Reconhecer a adultização é um passo importante para criar ambientes mais seguros e respeitar cada fase do
           desenvolvimento.
         </p>
@@ -77,9 +77,9 @@
 
 
     <div class="container-imagens">
-      <img class="foto1" src="./assets/foto1.jpg" />
-      <img class="foto2" src="./assets/foto2.jpg" />
-      <img class="foto3" src="./assets/foto3.jpg" />
+      <img class="foto1" src="./assets/foto1.jpg" alt="Crianças aproveitando a infância" loading="lazy" />
+      <img class="foto2" src="./assets/foto2.jpg" alt="Momento de cuidado e proteção à infância" loading="lazy" />
+      <img class="foto3" src="./assets/foto3.jpg" alt="Crianças em um ambiente seguro e acolhedor" loading="lazy" />
     </div>
     <div class="quem-somos-container">
 
@@ -122,7 +122,8 @@ Por meio do Guardiões da Infância, buscamos levar informação de maneira aces
       <form class="feedback-form" id="feedback-form">
         <label class="form-field" for="feedback-name">
           <span>Seu nome</span>
-          <input type="text" id="feedback-name" name="name" placeholder="Como podemos chamar você?" required />
+          <input type="text" id="feedback-name" name="name" autocomplete="name"
+            placeholder="Como podemos chamar você?" required />
         </label>
 
         <fieldset class="rating-field">

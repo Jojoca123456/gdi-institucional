@@ -22,14 +22,26 @@ html {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: 1px solid black;
+  gap: 12px;
+  padding: 12px;
+  background-color: rgba(13, 13, 13, 0.94);
+  border: 1px solid var(--hero-border);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
 }
 
-.header span {
-  border: 1px solid black;
+.header a:focus-visible,
+.hero-actions a:focus-visible,
+.feedback-submit:focus-visible,
+.feedback-dialog button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
 }
 
 .container {
@@ -330,6 +342,7 @@ html {
   min-height: 400px;
   min-width: 400px;
   grid-row: span 4 / span 4;
+  line-height: 1.5;
 }
 
 .txt2 {
@@ -345,6 +358,7 @@ html {
   min-height: 400px;
   min-width: 400px;
   grid-row: span 4 / span 4;
+  line-height: 1.5;
 }
 
 .section-text {
@@ -396,6 +410,7 @@ img {
   font-style: normal;
   font-size: 20px;
   font-weight: 700;
+  line-height: 1.5;
   transition:
     opacity 0.15s,
     transform 0.15s;
