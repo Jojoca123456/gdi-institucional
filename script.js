@@ -2,6 +2,9 @@ const feedbackForm = document.querySelector("#feedback-form");
 const feedbackDialog = document.querySelector("#feedback-dialog");
 const dialogMessage = document.querySelector("#dialog-message");
 const dialogClose = document.querySelector("#dialog-close");
+const currentYear = document.querySelector("#current-year");
+
+currentYear.textContent = new Date().getFullYear();
 
 feedbackForm.addEventListener("submit", (event) => {
   event.preventDefault();
