@@ -392,6 +392,7 @@ img {
 .nossa-txt {
   color: white;
   background-color: #6A5ACD;
+  opacity: 1;
   font-style: normal;
   font-size: 20px;
   font-weight: 700;
@@ -402,7 +403,7 @@ img {
 
 .nosso-txt:hover,
 .nossa-txt:hover {
-  opacity: 0.88;
+  opacity: 1;
   transform: translateY(-1px);
 }
 
@@ -491,6 +492,10 @@ img {
   color: var(--hero-muted);
   font-size: 20px;
   line-height: 1.6;
+}
+
+.feedback-intro p + p {
+  margin-top: 16px;
 }
 
 .feedback-form {
